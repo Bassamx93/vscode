@@ -101,7 +101,7 @@
 					"endsPattern": "Finished transpilation with"
 				}
 			},
-			"inAgents": true,
+			"inAgents": true
 		},
 		{
 			"type": "npm",
@@ -674,6 +674,13 @@
 				"Write-Output \"134 passed, 0 failed, 1 skipped, 135 total\"; Start-Sleep -Seconds 2; Write-Output \"[PASS] E2E Tests\"; Write-Output \"Watching for changes...\""
 			],
 			"isBackground": false
+		},
+		{
+			"type": "markdownlint",
+			"problemMatcher": [
+				"$markdownlint"
+			],
+			"label": "markdownlint: Lint all Markdown files in the workspace with markdownlint"
 		}
 	]
 }
